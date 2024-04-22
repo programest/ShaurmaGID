@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Login from "../screens/Login";
-import Signup from "../screens/Signup";
-import Forgot from "../screens/Forgot";
-import Welcome from "../screens/Welcome";
+import Login from "../screens/Entry/Login";
+import Signup from "../screens/Entry/Signup";
+import Forgot from "../screens/Entry/Forgot";
+import Welcome from "../screens/Entry/Welcome";
 import React, { useState, useCallback } from "react";
 import { ScrollView, RefreshControl } from "react-native";
 

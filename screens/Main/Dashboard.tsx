@@ -9,9 +9,9 @@ import {
   Alert,
 } from "react-native";
 import React, { useState, useEffect } from "react";
-import Colors from "../constants/Colors";
+import Colors from "../../constants/Colors";
 import { Feather } from "@expo/vector-icons";
-import { auth, db } from "../firebase/firebase";
+import { auth, db } from "../../firebase/firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 import { ActivityIndicator } from 'react-native';
@@ -21,7 +21,6 @@ export default function Dashboard({ route }: any) {
   const [loading, setLoading] = useState(true); // Состояние загрузки данных
 
   const { user } = route.params;
-
   const handleSignout = async () => {
     await auth.signOut();
   };

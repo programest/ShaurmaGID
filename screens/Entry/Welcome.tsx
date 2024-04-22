@@ -9,14 +9,13 @@ import {
     ScrollView,
   } from "react-native";
   import React, { useState } from "react";
-  import Logo from "../assets/svg/Logo";
+  import Logo from "../../assets/svg/Logo";
   export default function Welcome({ navigation }: { navigation: any }) {
    
     return (
       <View style={styles.container}>
-        {/* Используйте компонент ImageBackground для добавления фонового изображения */}
         <ImageBackground 
-          source={require('../assets/BGWelcomePage.jpg')} // Укажите путь к вашему изображению
+          source={require('../../assets/BGWelcomePage.jpg')} // Укажите путь к вашему изображению
           style={styles.backgroundImage}
         >
             <View style={styles.blockText}>
@@ -44,6 +43,7 @@ import {
     backgroundImage: {
       alignItems: 'center',
       flex: 1,
+      
       resizeMode: "cover",
     },
     text: {

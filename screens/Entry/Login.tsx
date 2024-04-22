@@ -8,13 +8,13 @@ import {
   Dimensions,
 } from "react-native";
 import React, { useState } from "react";
-import Colors from "../constants/Colors";
+import Colors from "../../constants/Colors";
 import { Feather } from "@expo/vector-icons";
-import { auth, db } from "../firebase/firebase";
+import { auth, db } from "../../firebase/firebase";
 import { Entypo } from "@expo/vector-icons";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { Button } from "../components/Button";
-import Message from "../components/Message";
+import { Button } from "../../components/Button";
+import Message from "../../components/Message";
 const { width, height } = Dimensions.get("window");
 let top;
 if (Platform.OS === "ios") {
